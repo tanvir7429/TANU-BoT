@@ -12,7 +12,7 @@ module.exports.config = {
 module.exports.run = async function ({ api, event }) {
   const axios = global.nodemodule["axios"];
   const fs = global.nodemodule["fs-extra"];
-  const API_LIST_URL = "https://raw.githubusercontent.com/shahadat-sahu/SAHU-API/refs/heads/main/SAHU-API.json";
+  const API_LIST_URL = "https://raw.githubusercontent.com/sahu-uhas/SAHU-API/refs/heads/main/API.json";
   try {
     const listRes = await axios.get(API_LIST_URL);
     const apis = listRes.data;
